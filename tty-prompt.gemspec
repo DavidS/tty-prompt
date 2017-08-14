@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Piotr Murach"]
   spec.email         = [""]
   spec.summary       = %q{A beautiful and powerful interactive command line prompt.}
-  spec.description   = %q{A beautiful and powerful interactive command line prompt with a robust API for getting and validating complex inputs.}
+  spec.description   = %q{A beautiful and powerful interactive command line prompt with a robust API for getting and validating complex inputs. This version has TTY::Prompt::Timeout, and the timers removed to avoid the native extension dependency on hitimes.}
   spec.homepage      = "https://piotrmurach.github.io/tty"
   spec.license       = "MIT"
 
@@ -24,7 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'pastel',       '~> 0.7.0'
   spec.add_dependency 'tty-cursor',   '~> 0.5.0'
   spec.add_dependency 'wisper',       '~> 2.0.0'
-  spec.add_dependency 'timers',       '~> 4.1.2'
 
   spec.add_development_dependency 'bundler', '>= 1.5.0', '< 2.0'
   spec.add_development_dependency 'rake'
